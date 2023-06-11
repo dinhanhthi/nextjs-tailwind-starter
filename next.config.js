@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
-  trailingSlash: true, // use "/about/" instead of "/about"
+const nextConfig = {
+  //   trailingSlash: true, // use "/about/" instead of "/about" (not supported yet by --turbo)
   poweredByHeader: false, // remove "Powered by Next.js" from the header
-  transpilePackages: ['react-syntax-highlighter'],
-  compiler: {
-    // Enables the styled-components SWC transform
-    styledComponents: true,
-  },
-  experimental: {
-    scrollRestoration: true,
-  },
+  transpilePackages: ['react-syntax-highlighter']
+  //   experimental: {
+  //     scrollRestoration: true // not supported yet by --turbo
+  //   }
 }
+
+module.exports = nextConfig
