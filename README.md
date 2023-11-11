@@ -1,6 +1,6 @@
 # 🐕 nextjs-tailwind-starter
 
-A starter for Next.js 13.4+ with preconfigured Tailwind CSS, ESLint, VSCode Settings and Prettier.
+A starter for Next.js 14+ with preconfigured Tailwind CSS, ESLint, VSCode Settings and Prettier.
 
 ```bash
 # install
