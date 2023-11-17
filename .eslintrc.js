@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   env: {
     browser: true,
     es2021: true,
@@ -13,7 +13,8 @@ module.exports = {
     'plugin:@next/next/recommended',
     'plugin:tailwindcss/recommended',
     'next',
-    'prettier', // make sure it's the last one,
+    'plugin:unicorn/recommended',
+    'prettier' // make sure it's the last one,
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
@@ -26,7 +27,7 @@ module.exports = {
       tsx: true
     }
   },
-  plugins: ['react', '@typescript-eslint', 'prettier', 'tailwindcss'],
+  plugins: ['react', '@typescript-eslint', 'prettier', 'tailwindcss', 'unused-imports'],
   /*
   More: https://eslint.org/docs/rules/
   "rules" always win over "extends"
@@ -49,8 +50,8 @@ module.exports = {
       {
         components: ['Link'],
         specialLink: ['hrefLeft', 'hrefRight'],
-        aspects: ['invalidHref', 'preferButton'], // Because it takes a lot of time!!!
-      },
+        aspects: ['invalidHref', 'preferButton'] // Because it takes a lot of time!!!
+      }
     ],
     'tailwindcss/no-custom-classname': 'off',
     'tailwindcss/enforces-negative-arbitrary-values': 'off',
@@ -62,9 +63,11 @@ module.exports = {
         ignoreComments: true,
         ignoreUrls: true,
         ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-      },
-    ],
+        ignoreTemplateLiterals: true
+      }
+    ]
   },
-  ignorePatterns: ['next-env.d.ts', 'graphql/**/*.ts'],
+  ignorePatterns: ['next-env.d.ts', 'graphql/**/*.ts']
 }
+
+export default config
