@@ -28,6 +28,9 @@ yarn clean
 
 # reinstall
 yarn reinstall
+
+# run test in watch mode
+yarn test
 ```
 
 For an example of an api request, let's make a `GET` to `http://localhost:3001/api/hello`.
