@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   //   trailingSlash: true, // use "/about/" instead of "/about" (not supported yet by --turbo)
   poweredByHeader: false, // remove "Powered by Next.js" from the header
@@ -8,4 +7,4 @@ const nextConfig = {
   //   }
 }
 
-module.exports = nextConfig
+export default nextConfig
