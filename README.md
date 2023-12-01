@@ -2,6 +2,16 @@
 
 A starter for Next.js 14+ with preconfigured Tailwind CSS, ESLint, VSCode Settings and Prettier.
 
+To get started, install [nvm](https://github.com/nvm-sh/nvm) and use it to install the desired version of Node.js and Yarn.
+
+
+```bash
+nvm install 20 # node v20
+# then install yarn
+npm i --global yarn
+yarn --version
+```
+
 ```bash
 # install
 yarn
