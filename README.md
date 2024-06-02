@@ -1,9 +1,10 @@
 # 🐕 nextjs-tailwind-starter
 
-A starter for Next.js 14+ with preconfigured Tailwind CSS, ESLint, VSCode Settings and Prettier.
+A starter for [Next.js 14+](https://nextjs.org/) with preconfigured [Tailwind CSS](https://tailwindcss.com/), [ESLint](https://eslint.org/), [VSCode](https://code.visualstudio.com/) Settings and [Prettier](https://prettier.io/).
 
-To get started, install [nvm](https://github.com/nvm-sh/nvm) and use it to install the desired version of Node.js and Yarn.
+## Getting Started
 
+To get started, install [nvm](https://github.com/nvm-sh/nvm) and use it to install the desired version of Node.js and [Yarn](https://yarnpkg.com/).
 
 ```bash
 nvm install 20 # node v20
@@ -44,3 +45,13 @@ yarn test
 ```
 
 For an example of an api request, let's make a `GET` to `http://localhost:3001/api/hello`.
+
+## Upgrade guide
+
+```bash
+# Next.js
+yarn add next@latest react@latest react-dom@latest eslint-config-next@latest
+
+# Tailwind
+yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest @tailwindcss/typography@latest eslint-plugin-tailwindcss@latest prettier-plugin-tailwindcss@latest
+```
