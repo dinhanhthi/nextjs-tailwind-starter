@@ -1,6 +1,6 @@
 # 🐕 nextjs-tailwind-starter
 
-A starter for [Next.js 14+](https://nextjs.org/) with preconfigured [Tailwind CSS](https://tailwindcss.com/), [ESLint](https://eslint.org/), [VSCode](https://code.visualstudio.com/) Settings and [Prettier](https://prettier.io/).
+A starter for [Next.js 15+](https://nextjs.org/) with preconfigured [Tailwind CSS](https://tailwindcss.com/), [ESLint](https://eslint.org/), [VSCode](https://code.visualstudio.com/) Settings and [Prettier](https://prettier.io/).
 
 ## Getting Started
 
@@ -54,6 +54,9 @@ For an example of an api request, let's make a `GET` to `http://localhost:3001/a
 ## Upgrade guide
 
 ```bash
+# all and intuitive
+yarn upgrade-interactive
+
 # Next.js
 yarn add next@latest react@latest react-dom@latest eslint-config-next@latest
 
