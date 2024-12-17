@@ -13,6 +13,11 @@ npm i --global yarn
 yarn --version
 ```
 
+> [!WARNING]  
+> `--turbo` [doesn't work](https://github.com/vercel/next.js/issues/42651) with [`yarn` PnP](https://yarnpkg.com/features/pnp), try `npm` or force yarn to use `node-modules` instead!
+> (Using `node_modules` with new `yarn`: `yarn config set nodeLinker node-modules`)
+> (Revert to pnp by `yarn config set nodeLinker pnp`)
+
 ```bash
 # install
 yarn
